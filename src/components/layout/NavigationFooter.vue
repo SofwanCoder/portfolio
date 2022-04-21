@@ -6,17 +6,14 @@
           <small>&copy; 2015 - 2022</small>
         </div>
         <div>
-          <small>Sofwan Ayinde Lawal</small>
+          <a class="text-white-50" target="_blank"
+             href="https://drive.google.com/file/d/14QlnOzGHLHe-YEe2_z_vKBhRhPYNSQ9s/view"
+             title="See Resume"
+          >
+            <small>Sofwan Ayinde Lawal</small>
+          </a>
         </div>
       </div>
     </div>
   </footer>
 </template>
-
-<script lang="ts" setup>
-
-</script>
-
-<style type="scss" scoped>
-
-</style>
