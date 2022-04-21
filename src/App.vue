@@ -1,9 +1,18 @@
 <template>
   <NavigationHeader />
+  <div class="container py-5">
+    <RouterView></RouterView>
+  </div>
+  <NavigationFooter />
 </template>
 
 <script lang="ts" setup>
-import { NavigationHeader } from "@/components/layout/index.ts";
+import NavigationFooter from "@/components/layout/NavigationFooter.vue";
+import NavigationHeader from "@/components/layout/NavigationHeader.vue";
 </script>
 
-<style></style>
+<style scoped>
+.container{
+  flex-grow: 1 !important;
+}
+</style>
