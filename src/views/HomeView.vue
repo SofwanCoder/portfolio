@@ -11,8 +11,8 @@
       />
     </div>
     <div class="text-center pt-4">
-      <h1>Sofwan Lawal</h1>
-      <h3>Engineer</h3>
+      <h1>Sofwan A. Lawal</h1>
+      <h4>Software Engineer</h4>
 
       <div class="pt-3">
         <a
