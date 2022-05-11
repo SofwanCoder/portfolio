@@ -32,7 +32,7 @@
           <Twitter width="40" height="40" class="icon" />
         </a>
         <a
-          href="https://linkedin.com/sofwancoder"
+          href="https://linkedin.com/in/sofwancoder"
           class="p-2"
           target="_self"
           title="SofwanCoder on Linkedin"
@@ -40,7 +40,7 @@
           <Linkedin width="40" height="40" class="icon" />
         </a>
         <a
-          href="https://www.youtube.com/channel/UCF2fWr1GsvCx_Xb_5yUv6WA"
+          href="https://bit.ly/SofwanCoderYoutube"
           class="p-2"
           target="_self"
           title="SofwanCoder on Youtube"
