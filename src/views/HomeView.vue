@@ -18,7 +18,7 @@
         <a
           href="https://github.com/sofwancoder"
           class="p-2"
-          target="_self"
+          target="_blank"
           title="SofwanCoder on Github"
         >
           <Github width="40" height="40" class="icon" />
@@ -26,7 +26,7 @@
         <a
           href="https://twitter.com/sofwancoder"
           class="p-2"
-          target="_self"
+          target="_blank"
           title="SofwanCoder on Twitter"
         >
           <Twitter width="40" height="40" class="icon" />
@@ -34,7 +34,7 @@
         <a
           href="https://linkedin.com/in/sofwancoder"
           class="p-2"
-          target="_self"
+          target="_blank"
           title="SofwanCoder on Linkedin"
         >
           <Linkedin width="40" height="40" class="icon" />
@@ -42,7 +42,7 @@
         <a
           href="https://bit.ly/SofwanCoderOnYoutube"
           class="p-2"
-          target="_self"
+          target="_blank"
           title="SofwanCoder on Youtube"
         >
           <Youtube width="40" height="40" class="icon" />
@@ -50,7 +50,7 @@
         <a
           href="https://bit.ly/SofwanCoderOnResume"
           class="p-2"
-          target="_self"
+          target="_blank"
           title="View SofwanCoder's resume"
         >
           <Resume width="40" height="40" class="icon" />

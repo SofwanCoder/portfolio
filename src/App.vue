@@ -12,7 +12,7 @@ import NavigationHeader from "@/components/layout/NavigationHeader.vue";
 </script>
 
 <style scoped>
-.container{
+.container {
   flex-grow: 1 !important;
   max-height: 100%;
 }

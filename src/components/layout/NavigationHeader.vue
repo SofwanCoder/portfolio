@@ -2,11 +2,17 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
     <div class="container">
       <router-link class="navbar-brand fw-bolder fs-2" to="/">
-        <span class>
-          SofwanCoder/
-        </span>
+        <span class> SofwanCoder/ </span>
       </router-link>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarTogglerDemo01"
+        aria-controls="navbarTogglerDemo01"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -18,10 +24,11 @@
             <a class="nav-link disabled">Links</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link"
-               style="color: steelblue"
-               target="_blank"
-               href="https://drive.google.com/file/d/14QlnOzGHLHe-YEe2_z_vKBhRhPYNSQ9s/view"
+            <a
+              class="nav-link"
+              style="color: steelblue"
+              target="_blank"
+              href="https://bit.ly/SofwanCoderOnResume"
             >
               Resume
             </a>
@@ -33,8 +40,8 @@
 </template>
 
 <style lang="scss">
-.navbar-brand{
-  &:hover{
+.navbar-brand {
+  &:hover {
     color: #f00;
   }
 }
