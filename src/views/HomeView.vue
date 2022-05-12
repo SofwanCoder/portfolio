@@ -40,7 +40,7 @@
           <Linkedin width="40" height="40" class="icon" />
         </a>
         <a
-          href="https://bit.ly/SofwanCoderYoutube"
+          href="https://bit.ly/SofwanCoderOnYoutube"
           class="p-2"
           target="_self"
           title="SofwanCoder on Youtube"
@@ -48,7 +48,7 @@
           <Youtube width="40" height="40" class="icon" />
         </a>
         <a
-          href="https://drive.google.com/file/d/14QlnOzGHLHe-YEe2_z_vKBhRhPYNSQ9s/view"
+          href="https://bit.ly/SofwanCoderOnResume"
           class="p-2"
           target="_self"
           title="View SofwanCoder's resume"
