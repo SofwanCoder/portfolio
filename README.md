@@ -5,20 +5,20 @@ I build things from scratch that works.. Eventually!
 </h3>
 
 <p align="center">
-    <a href="https://twitter.com/sofwancoder">
+    <a href="https://sofwancoder.com">
       <img src="https://komarev.com/ghpvc/?username=SofwanCoder&color=blue&label=Profile%20Views&style=for-the-badge"/>
     </a>
-    <a href="https://twitter.com/sofwancoder">
+    <a href="https://sofwancoder.com">
       <img src="https://img.shields.io/github/followers/SofwanCoder?label=GitHub%20Followers&style=for-the-badge"/>
     </a>
   </p>
 
 - 🔭 I’m currently working on "Something Cool"
-- 🌱 I’m a Vuevocate
-- 👯 I’m looking to collaborate on "DevOps Role"
+- 🌱 I’m open to working on new projects
+- 👯 I’m looking to collaborate on "Software Engineering Role"
 - 🤔 I’m looking for help with "Money"
-- 💬 Ask me questions about **PHP | GIT | GO | Node.js**
-- ⚡ Fun fact: "I no humble"
+- 💬 Ask me questions about **Backend Engineering | System Design**
+- ⚡ Fun fact: "🌱"
 
 
 ## ⚡ Github Stats
