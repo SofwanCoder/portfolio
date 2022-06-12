@@ -21,28 +21,19 @@
       </p>
 
       <p>
-        Because I've already worked on several project with highly placed
-        individuals, I have keen insight into what it takes to run a successful
-        project. I'm constantly keen to improve my skills so that I may continue
-        to create amazing experiences.
+        I've already worked on several project with highly placed individuals,
+        and I have keen insight into what it takes to run a successful project.
+        I'm constantly trying to improve my skills so that I may continue to
+        create amazing experiences.
       </p>
 
       <p>
-        A dedicated, experienced, and versatile Integration/Backend Engineer
-        with a strong engineering background with a Bachelor's degree focused in
-        computer Science (Education) from the University of Ilorin at Kwara
-        State, Nigeria. With over 4 years of experience working with complex and
-        incredible systems in Backend development utilizing a variety of strong
-        technologies.
-      </p>
-
-      <p>
-        I have a passion for processes and I tend to view myself as a generalist
-        since I try not to focus on any given technology. I have industry expert
-        in different programming language ranging JavaScript, to PHP, Java, I
-        also have extensive experience as a Linux Server administrator on
-        large-scale production levels in full Agile environments. I'm currently
-        improving and diving deep into Blockchain and Web3
+        I am a dedicated, experienced, and versatile Integration/Backend
+        Engineer with a strong engineering background with a Bachelor's degree
+        focused in computer Science (Education) from the University of Ilorin at
+        Kwara State, Nigeria. With over 4 years of experience working with
+        complex and incredible systems in Backend development utilizing a
+        variety of strong technologies.
       </p>
     </div>
   </div>
