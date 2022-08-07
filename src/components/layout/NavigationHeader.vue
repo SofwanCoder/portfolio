@@ -21,7 +21,7 @@
             <router-link class="nav-link" to="/about">About</router-link>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled">Links</a>
+            <a class="nav-link" href="https://bit.ly/3zE2wmr">Blog</a>
           </li>
           <li class="nav-item">
             <a
