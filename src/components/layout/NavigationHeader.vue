@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
     <div class="container">
       <router-link class="navbar-brand fw-bolder fs-2" to="/">
-        <span class> SofwanCoder/ </span>
+        <img src="@/assets/logo.png" alt="logo" height="90" />
       </router-link>
       <button
         class="navbar-toggler"
@@ -33,13 +33,38 @@
               Resume
             </a>
           </li>
+          <li class="nav-item" ref="calendarBooking">
+            <a class="nav-link text-success" @click="booking.trigger" href="#">
+              Chat 💬
+            </a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 </template>
 
-<style lang="scss">
+<script lang="ts" setup>
+import { useBookingStore } from "@/stores/booking";
+const booking = useBookingStore();
+
+const calendarBookingTarget = document.createElement("div");
+const target = calendarBookingTarget;
+target.insertAdjacentElement = (where, element: HTMLButtonElement) => {
+  booking.register(element);
+  return element;
+};
+window.addEventListener("load", () => {
+  (window as any).calendar.schedulingButton.load({
+    url: "https://calendar.google.com/calendar/appointments/schedules/AcZssZ35rsoy-zqs7ljuFLaGDe3AmUabNbjBCfBuXS8CFUrbHqte_6iWEkMvdjaaf88idmAP3fXXGj6u?gv=true",
+    color: "#039BE5",
+    label: "Book an appointment",
+    target,
+  });
+});
+</script>
+
+<style lang="scss" scoped>
 .navbar-brand {
   &:hover {
     color: #f00;
