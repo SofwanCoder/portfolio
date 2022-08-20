@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light p-4">
     <div class="container">
       <router-link class="navbar-brand fw-bolder fs-2" to="/">
-        <img src="@/assets/logo.png" alt="logo" height="90" />
+        <img src="@/assets/logo.png" alt="logo" height="90" width="200" />
       </router-link>
       <button
         class="navbar-toggler"
