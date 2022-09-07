@@ -33,20 +33,67 @@
               Resume
             </a>
           </li>
-          <li class="nav-item" ref="calendarBooking">
-            <a class="nav-link text-success" @click="booking.trigger" href="#">
+          <li class="nav-item">
+            <a
+              class="nav-link text-success d-none d-md-block"
+              @click="booking.trigger"
+              href="#"
+            >
+              Chat 💬
+            </a>
+            <!--  use modal for smaller screens instead          -->
+            <a
+              class="nav-link text-primary d-md-none"
+              data-bs-toggle="modal"
+              data-bs-target="#bookingModal"
+              href="#"
+            >
               Chat 💬
             </a>
           </li>
         </ul>
       </div>
     </div>
+    <!-- Modal for small screens because the styling on default google calendar is bad for small scrreens   -->
+    <teleport to="body">
+      <div
+        class="modal fade"
+        id="bookingModal"
+        ref="bookingModal"
+        tabindex="-1"
+        aria-labelledby="bookingModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h6 class="modal-title" id="bookingModalLabel">Find a slot</h6>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <iframe
+              class="modal-body w-100 h-100 p-0 m-0"
+              :src="loadCalendar ? `https://bit.ly/SofwancoderOnCalender` : ''"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </teleport>
   </nav>
 </template>
 
 <script lang="ts" setup>
+import { ref, onMounted } from "vue";
 import { useBookingStore } from "@/stores/booking";
 const booking = useBookingStore();
+
+const loadCalendar = ref(false);
+const bookingModal = ref<HTMLDivElement | null>();
 
 const calendarBookingTarget = document.createElement("div");
 const target = calendarBookingTarget;
@@ -60,6 +107,15 @@ window.addEventListener("load", () => {
     color: "#039BE5",
     label: "Book an appointment",
     target,
+  });
+});
+
+onMounted(() => {
+  bookingModal.value?.addEventListener("show.bs.modal", () => {
+    loadCalendar.value = true;
+  });
+  bookingModal.value?.addEventListener("hide.bs.modal", () => {
+    loadCalendar.value = false;
   });
 });
 </script>
