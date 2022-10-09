@@ -1,6 +1,6 @@
 <h1 align="center"> Hi 👋, I'm Sofwan </h1>
 <h3 align="center">
-I'm a Backend/DevOps Engineer with mixed interest in Web Development.
+I'm a Backend Engineer with mixed interest in Network/Cloud Engineering.
 I build things from scratch that works.. Eventually!
 </h3>
 
