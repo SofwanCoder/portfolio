@@ -36,9 +36,19 @@
         variety of strong technologies.
       </p>
     </div>
+
+    <div class="text-center">
+      <button class="btn btn-dark btn-lg" @click="showCalendar">
+        Book a free session
+      </button>
+    </div>
   </div>
 </template>
+<script lang="ts" setup>
+import { inject } from "vue";
 
+const showCalendar = inject("showCalendar", () => null);
+</script>
 <style lang="scss" scoped>
 p {
   text-align: justify;

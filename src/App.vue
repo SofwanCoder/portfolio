@@ -1,5 +1,6 @@
 <template>
   <NavigationHeader />
+  <ScheduleCalendarModal :activated="calendarShown" />
   <div class="container py-5">
     <RouterView></RouterView>
   </div>
@@ -9,6 +10,21 @@
 <script lang="ts" setup>
 import NavigationFooter from "@/components/layout/NavigationFooter.vue";
 import NavigationHeader from "@/components/layout/NavigationHeader.vue";
+import ScheduleCalendarModal from "@/components/modals/ScheduleCalendarModal.vue";
+import { provide, ref } from "vue";
+
+const calendarShown = ref(false);
+
+const showCalendar = () => {
+  calendarShown.value = true;
+};
+
+const hideCalendar = () => {
+  calendarShown.value = false;
+};
+
+provide("showCalendar", showCalendar);
+provide("hideCalendar", hideCalendar);
 </script>
 
 <style scoped>
