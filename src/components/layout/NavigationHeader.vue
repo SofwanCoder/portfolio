@@ -38,7 +38,7 @@
               Let's Talk 💬
             </router-link>
           </li>
-          <li class="nav-item">
+          <li v-show="false" class="nav-item">
             <a class="nav-link text-primary" href="#" @click="showCalendar">
               Coffee
             </a>
