@@ -12,7 +12,7 @@
             href="https://bit.ly/SofwanCoderOnResume"
             title="See Resume"
           >
-            <small>Sofwan Ayinde Lawal</small>
+            <small>Sofwan A. Lawal</small>
           </a>
         </div>
       </div>
