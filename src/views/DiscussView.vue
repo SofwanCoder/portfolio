@@ -28,9 +28,19 @@
 </template>
 
 <script lang="ts" setup>
-import { inject } from "vue";
+import { inject, onMounted } from "vue";
+import { useRoute } from "vue-router";
 
 const showCalendar = inject("showCalendar", () => null);
+
+const route = useRoute();
+
+// Show calendar when query param `schedule` is set to true
+onMounted(() => {
+  if (route.query.schedule) {
+    showCalendar();
+  }
+});
 </script>
 
 <style lang="scss" scoped>
