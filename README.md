@@ -11,10 +11,8 @@ I build things from scratch that works.. Eventually!
     <a href="https://sofwancoder.com">
       <img src="https://img.shields.io/github/followers/SofwanCoder?label=GitHub%20Followers&style=for-the-badge"/>
     </a>
-  </p>
+</p>
 
-- 🔭 I’m currently working on "Something Cool"
-- 🌱 I’m open to working on new projects
 - 👯 I’m looking to collaborate on "Software Engineering Role"
 - 🤔 I’m looking for help with "Money"
 - 💬 Ask me questions about **Backend Engineering | System Design**
