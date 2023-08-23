@@ -5,6 +5,7 @@
         <img src="@/assets/logo.png" alt="logo" height="90" width="200" />
       </router-link>
       <button
+        ref="toggleNavButton"
         class="navbar-toggler"
         type="button"
         data-bs-toggle="collapse"
@@ -17,6 +18,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+          <li class="nav-item">
+            <router-link class="nav-link" to="/">Home</router-link>
+          </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/about">About</router-link>
           </li>
@@ -50,8 +54,23 @@
 </template>
 
 <script lang="ts" setup>
-import { inject } from "vue";
+import { inject, ref, watch } from "vue";
+import { useRoute } from "vue-router";
 const showCalendar = inject("showCalendar", () => null);
+const route = useRoute();
+const toggleNavButton = ref<HTMLButtonElement | undefined>();
+watch(
+  () => route.path,
+  () => {
+    if (!toggleNavButton.value) {
+      return;
+    }
+    // check if the navbar is collapsed
+    if (toggleNavButton.value.getAttribute("aria-expanded") === "true") {
+      toggleNavButton.value.click(); // click the toggle button
+    }
+  }
+);
 </script>
 
 <style lang="scss" scoped>
