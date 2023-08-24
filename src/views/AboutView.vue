@@ -1,17 +1,17 @@
 <template>
   <div class="about">
     <h1 class="display-6 fw-bold">
-      About Me: A Passionate Senior Software Engineer and Process Enthusiast
+      About Me: A Passionate Software Engineer and Process Enthusiast
     </h1>
 
     <p>
       <small>
-        <b>Greetings!</b> I am a seasoned Senior Software Engineer with over 8
-        years of diverse experience, primarily focusing on Backend development
-        and server management. Throughout my career journey, I have had the
-        privilege of crafting exceptional applications, leading projects with
-        finesse, and assisting in nurturing long-lasting relationships with
-        esteemed clients. <br /><b>Allow me to share my story with you.</b>
+        <b>Greetings!</b> I am a seasoned Software Engineer with over 8 years of
+        diverse experience, primarily focusing on Backend development and server
+        management. Throughout my career journey, I have had the privilege of
+        crafting exceptional applications, leading projects with finesse, and
+        assisting in nurturing long-lasting relationships with esteemed clients.
+        <br /><b>Allow me to share my story with you.</b>
       </small>
     </p>
 
@@ -84,7 +84,7 @@
 
     <div class="summary">
       <p class="fw-bold">
-        In summary, I am a Senior Software Engineer who thrives on technical
+        In summary, I am a Software Engineer who thrives on technical
         challenges, process optimization, and the pursuit of groundbreaking
         technologies. My journey has been marked by versatility, a deep-rooted
         passion for innovation, and a relentless drive to create remarkable
