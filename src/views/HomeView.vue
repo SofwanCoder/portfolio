@@ -44,6 +44,7 @@
           class="p-2"
           target="_blank"
           title="SofwanCoder on Youtube"
+          v-show="false"
         >
           <Youtube width="40" height="40" class="icon" />
         </a>
