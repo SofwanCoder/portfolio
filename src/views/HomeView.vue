@@ -12,7 +12,7 @@
     </div>
     <div class="text-center pt-4">
       <h1>Sofwan A. Lawal</h1>
-      <h4>Software Engineer</h4>
+      <h5>Software Engineering Consultant</h5>
 
       <div class="pt-3">
         <a
@@ -24,7 +24,7 @@
           <Github width="40" height="40" class="icon" />
         </a>
         <a
-          href="https://twitter.com/sofwancoder"
+          href="https://x.com/sofwancoder"
           class="p-2"
           target="_blank"
           title="SofwanCoder on Twitter"

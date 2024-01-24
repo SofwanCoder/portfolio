@@ -39,7 +39,7 @@
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/discuss">
-              Let's Talk 💬
+              Consultation 💬
             </router-link>
           </li>
           <li v-show="false" class="nav-item">
