@@ -101,7 +101,7 @@
     </div>
 
     <div class="text-center">
-      <button class="btn btn-dark btn-lg" @click="showCalendar">
+      <button class="btn btn-dark btn-lg" @click="toggleCalendar">
         Book a free session
       </button>
     </div>
@@ -110,7 +110,7 @@
 <script lang="ts" setup>
 import { inject } from "vue";
 
-const showCalendar = inject("showCalendar", () => null);
+const toggleCalendar = inject("toggleCalendar", () => null);
 </script>
 <style lang="scss" scoped>
 p {

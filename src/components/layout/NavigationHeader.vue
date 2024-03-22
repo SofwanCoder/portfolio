@@ -38,12 +38,12 @@
             </a>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" to="/discuss">
+            <router-link class="nav-link" :to="{ name: 'consultation' }">
               Consultation 💬
             </router-link>
           </li>
           <li v-show="false" class="nav-item">
-            <a class="nav-link text-primary" href="#" @click="showCalendar">
+            <a class="nav-link text-primary" href="#" @click="toggleCalendar">
               Coffee
             </a>
           </li>
@@ -56,7 +56,7 @@
 <script lang="ts" setup>
 import { inject, ref, watch } from "vue";
 import { useRoute } from "vue-router";
-const showCalendar = inject("showCalendar", () => null);
+const toggleCalendar = inject("toggleCalendar", () => null);
 const route = useRoute();
 const toggleNavButton = ref<HTMLButtonElement | undefined>();
 watch(
@@ -69,7 +69,7 @@ watch(
     if (toggleNavButton.value.getAttribute("aria-expanded") === "true") {
       toggleNavButton.value.click(); // click the toggle button
     }
-  }
+  },
 );
 </script>
 

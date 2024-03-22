@@ -23,7 +23,7 @@
       </p>
     </div>
 
-    <div class="row d-flex g-4 text-center">
+    <div v-if="false" class="row d-flex g-4 text-center">
       <div class="col col-12 col-md-4 col-lg-3">
         <div class="card shadow border-0 h-100">
           <div
@@ -40,9 +40,6 @@
                 changes and optimized maintenance costs..
               </small>
             </p>
-            <div>
-              <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
-            </div>
           </div>
         </div>
       </div>
@@ -59,9 +56,6 @@
                 in a functional specification.
               </small>
             </p>
-            <div>
-              <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
-            </div>
           </div>
         </div>
       </div>
@@ -77,9 +71,6 @@
                 delivery process.
               </small>
             </p>
-            <div>
-              <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
-            </div>
           </div>
         </div>
       </div>
@@ -96,16 +87,13 @@
                 model.
               </small>
             </p>
-            <div>
-              <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
-            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="text-center mt-5">
-      <button class="btn btn-dark btn-lg" @click="showCalendar">
+      <button class="btn btn-dark btn-lg" @click="toggleBooking">
         Book a session
       </button>
     </div>
@@ -116,14 +104,14 @@
 import { inject, onMounted } from "vue";
 import { useRoute } from "vue-router";
 
-const showCalendar = inject("showCalendar", () => null);
+const toggleBooking = inject("toggleBooking", () => null);
 
 const route = useRoute();
 
 // Show calendar when query param `schedule` is set to true
 onMounted(() => {
   if (route.query.schedule) {
-    showCalendar();
+    toggleBooking();
   }
 });
 </script>

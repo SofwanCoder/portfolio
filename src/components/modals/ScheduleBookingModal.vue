@@ -12,7 +12,7 @@
       <div class="modal-dialog modal-fullscreen">
         <div class="modal-content">
           <div class="modal-header">
-            <h6 class="modal-title" id="bookingModalLabel">Find a slot</h6>
+            <h6 class="modal-title" id="bookingModalLabel">{{ label }}</h6>
             <button
               type="button"
               class="btn-close"
@@ -22,7 +22,7 @@
           </div>
           <iframe
             class="modal-body w-100 h-100 p-0 m-0"
-            :src="activated ? `https://bit.ly/SofwancoderOnCalender` : ''"
+            :src="activated ? link : ''"
           >
           </iframe>
         </div>
@@ -39,22 +39,24 @@ const bookingModal = ref<HTMLDivElement | null>();
 
 const props = defineProps({
   activated: Boolean,
-});
+  label: String,
+  link: String,
 
-const hideCalendar = inject("hideCalendar", () => null);
-const showCalendar = inject("showCalendar", () => null);
+  show: Function,
+  hide: Function,
+});
 
 watch(
   () => props.activated,
-  () => Modal.getOrCreateInstance(bookingModal.value as HTMLDivElement)?.show()
+  () => Modal.getOrCreateInstance(bookingModal.value as HTMLDivElement)?.show(),
 );
 
 onMounted(() => {
   bookingModal.value?.addEventListener("show.bs.modal", () => {
-    showCalendar();
+    props.show?.();
   });
   bookingModal.value?.addEventListener("hide.bs.modal", () => {
-    hideCalendar();
+    props.hide?.();
   });
 });
 </script>
